@@ -23,7 +23,7 @@ if (port == null || port == "") {
   port = 8000;
 }
 
-http.listen(80);
+http.listen(port);
 
 function show() {
     sockets.forEach(function(thisSocket) {
