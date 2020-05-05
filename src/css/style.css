@@ -1,0 +1,6 @@
+#send_container {
+    display: flex;
+    right: 0;
+    z-index: 999;
+    position: absolute;
+}
