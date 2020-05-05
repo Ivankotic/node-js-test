@@ -1,9 +1,8 @@
-var app = require('express')();
-var http = require('http').Server(app);
-var io = require('socket.io')(http);
-
-var sockets = [];
-var text = '';
+let app = require('express')();
+let http = require('http').Server(app);
+let io = require('socket.io')(http);
+let sockets = [];
+let text = '';
 
 let port = process.env.PORT;
 
@@ -20,7 +19,7 @@ app.get('/logic', function(req, res){
 });
 
 if (port == null || port == "") {
-  port = 8000;
+  port = 80;
 }
 
 http.listen(port);
