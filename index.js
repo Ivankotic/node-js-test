@@ -5,6 +5,8 @@ var io = require('socket.io')(http);
 var sockets = [];
 var text = '';
 
+let port = process.env.PORT;
+
 app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
@@ -16,6 +18,10 @@ app.get('/css', function(req, res){
 app.get('/logic', function(req, res){
     res.sendFile(__dirname + '/src/js/logic.js');
 });
+
+if (port == null || port == "") {
+  port = 8000;
+}
 
 http.listen(80);
 
