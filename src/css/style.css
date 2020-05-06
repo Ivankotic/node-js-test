@@ -1,6 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 #send_container {
+    margin: 1%;
     display: flex;
+    position: fixed;
     right: 0;
+    top: 0;
     z-index: 999;
-    position: absolute;
+}
+
+#messages {
+    width: 80%;
+    margin: 5em .5em;
 }
