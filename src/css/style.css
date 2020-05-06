@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+body {
+    background-color: #797979;
+}
+
 #send_container {
     margin: 1%;
     display: flex;
@@ -10,9 +14,35 @@
     right: 0;
     top: 0;
     z-index: 999;
+    background-color: #ffffff;
 }
 
 #messages {
     width: 80%;
     margin: 5em .5em;
+}
+
+.message {
+    margin: 2em 1em;
+    background-color: #0a869c;
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+}
+
+.message > .date {
+    margin: .5em;
+}
+
+.message > .time {
+    margin: .5em;
+}
+
+.message > .text {
+
 }
