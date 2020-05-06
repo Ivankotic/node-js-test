@@ -26,13 +26,11 @@ body {
     margin: 2em 1em;
     background-color: #0a869c;
     width: 100%;
-    padding: 1%;
-    display: flex;
-    border-radius: 5%;
-    -webkit-border-radius: 5%;
-    -moz-border-radius: 5%;
-    -ms-border-radius: 5%;
-    -o-border-radius: 5%;
+    min-height: 10em;
+    padding: .5em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    word-break: break-all;
 }
 
 .message > .date {
