@@ -23,24 +23,31 @@ body {
 }
 
 .message {
-    margin: 2em 1em;
     background-color: #0a869c;
     width: 100%;
     min-height: 10em;
-    padding: .5em;
+    margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
     word-break: break-all;
 }
 
 .message > .date {
-    margin: .5em;
+    background-color: #56b480;
+    border-bottom: .2em solid #748137;
+    font-size: 130%;
+    height: 2em;
+    padding: .3em;
 }
 
 .message > .time {
-    margin: .5em;
+    background-color: #56b480;
+    border-bottom: .2em solid #748137;
+    font-size: 130%;
+    height: 2em;
+    padding: .3em;
 }
 
 .message > .text {
-
+    margin: 1em .5em;
 }

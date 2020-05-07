@@ -60,7 +60,7 @@ io.on('connection', function (socket) {
                 let new_message_html = '<div class="message"><p class="date">' + date.getDate() + '.' + (date.getMonth() + 1) + '.' + date.getFullYear() +'</p>' + '<p class="time">' + date.getHours() + ':' + date.getMinutes() + '</p><p class="text">' + data.message + '</p></div>';
 
                 let myquery = { db_text: the_text };
-                let newvalues = { $set: { db_text: the_text + new_message_html} };
+                let newvalues = { $set: { db_text: new_message_html + the_text} };
                 db.collection('test_col').updateOne(myquery, newvalues, function () {
                     get_text(function (new_text) {
                         show(new_text);
