@@ -29,7 +29,7 @@ body {
     margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    word-break: break-all;
+    text-align: justify;
 }
 
 .message > .date {
